@@ -1,0 +1,236 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+
+p {
+  color: white;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 2.5 rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  padding-top: 10%;
+  background-color:#FF2626;
+  color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Title Section */
+
+#title {
+  background-color: #27374D;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.img-fluid {
+  margin-top: 10%;
+  width: 100%;
+  position: absolute;
+
+  
+}
+@media only screen and (max-width: 1000px) {
+  .img-fluid {
+    display: none;
+  }
+}
+
+
+
+/* Features Section */
+.T2{
+  padding-top: 11%;
+  width: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.T3{
+  background-color: #fff;
+  padding-top: 10%;
+  width: 100%;
+}
+
+.credit{
+  text-align: center;
+  background-color: white;
+}
+
+.testimonial-image{
+width: 250px;
+}
+
+.testimonial-image2{
+width: 300px;
+
+}
+
+.testimonial-image3{
+width: 350px;
+}
+
+.china{
+opacity: 0.1;
+text-shadow: 5px, 5px, 3px rgb(238, 238, 238);
+font-size: 75px;
+}
+
+
+.white-section{
+  padding-top: 10%;
+}
+
+
+#pricing {
+  color: white;
+  padding: 100px;
+  background-color: #FF2626;
+}
+
+.card-header{
+color: #000;
+}
+
+h5{
+  color: #000;
+  text-align: center;
+}
+
+.card-text{
+  color: #000;
+}
+
+em{
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cards {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  background:#FF2626;
+  grid-gap: 2rem;
+  padding: 2rem;
+  perspective: 1000px;
+}
+
+.framework-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  padding-top: 3rem;
+  position: relative;
+  transform-origin: top center;
+  --rotate: 10deg;
+  transform: rotateX(var(--rotate));
+  transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2.2);
+}
+
+.framework-card:before {
+  right: auto;
+  left: 20px;
+}
+
+.framework-card:hover {
+  transform: rotateX(-20deg);
+}
+
+
+card:before,
+.framework-card:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #5c0dac;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  top: 15px;
+  right: 20px;
+  position: absolute;
+  border-radius: 80%;
+}
+
+.framework-card:before,
+.framework-card:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #5c0dac;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  top: 15px;
+  right: 20px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.framework-card img {
+  height: 80px;
+  width: 100%;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+}
+
+.framework-card p {
+  color: #000;
+  font-size: small;
+  font-weight: 900;
+}
