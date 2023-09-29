@@ -32,7 +32,7 @@ p {
 
 .colored-section {
   padding-top: 10%;
-  background-color:#FF2626;
+  background-color:#001524;
   color: #fff;
 }
 
@@ -60,7 +60,7 @@ p {
 /* Title Section */
 
 #title {
-  background-color: #27374D;
+  background-color: #001524;
   color: #fff;
   text-align: left;
 }
@@ -72,8 +72,10 @@ p {
 /* Title Image */
 
 .img-fluid {
+  margin-left: 1%;
+  opacity: 0.2;
   margin-top: 10%;
-  width: 100%;
+  width: 60%;
   position: absolute;
 
   
@@ -84,6 +86,9 @@ p {
   }
 }
 
+img {
+  max-width: 100%;
+}
 
 
 /* Features Section */
@@ -105,9 +110,7 @@ p {
   background-color: white;
 }
 
-.testimonial-image{
-width: 250px;
-}
+
 
 .testimonial-image2{
 width: 300px;
@@ -133,7 +136,7 @@ font-size: 75px;
 #pricing {
   color: white;
   padding: 100px;
-  background-color: #FF2626;
+  background-color: #001524;
 }
 
 .card-header{
@@ -155,82 +158,5 @@ em{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.cards {
-  display: grid;
-  grid-column: 1/-1;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  background:#FF2626;
-  grid-gap: 2rem;
-  padding: 2rem;
-  perspective: 1000px;
-}
-
-.framework-card {
-  background: #fff;
-  border-radius: 20px;
-  padding: 1rem;
-  text-align: center;
-  padding-top: 3rem;
-  position: relative;
-  transform-origin: top center;
-  --rotate: 10deg;
-  transform: rotateX(var(--rotate));
-  transition: transform 0.2s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 2.2);
-}
-
-.framework-card:before {
-  right: auto;
-  left: 20px;
-}
-
-.framework-card:hover {
-  transform: rotateX(-20deg);
-}
 
 
-card:before,
-.framework-card:after {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  background: #5c0dac;
-  border: 1px solid #000;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  top: 15px;
-  right: 20px;
-  position: absolute;
-  border-radius: 80%;
-}
-
-.framework-card:before,
-.framework-card:after {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 8px;
-  background: #5c0dac;
-  border: 1px solid #000;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  top: 15px;
-  right: 20px;
-  position: absolute;
-  border-radius: 50%;
-}
-
-.framework-card img {
-  height: 80px;
-  width: 100%;
-  object-fit: contain;
-}
-
-img {
-  max-width: 100%;
-}
-
-.framework-card p {
-  color: #000;
-  font-size: small;
-  font-weight: 900;
-}
